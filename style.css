@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    flex: 1;
+}
+
+.header{
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+
+.profile>.content>img{
+    width: 400px;
+    height: 400px;
+}
+
+ul{
+    text-decoration-line: none;
+}
