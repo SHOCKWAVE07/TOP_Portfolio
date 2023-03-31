@@ -7,72 +7,116 @@ body{
     flex-direction: column;
 }
 
+
 .top{
     display: flex;
+    /* background-color: #f4a7bb; */
+    background-color: #e5446f;
     flex-direction: column;
-    background-color: #f4a7bb;
-    padding:20px 0 0 10px ;
+    padding: 10px;
 }
 
 .top > .header{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 40px;
-    padding: 4px;
-    margin-right: 40px;
+    width: 100%;
 }
 
 .top > .header > .logo{
-    font-size: 16px;
+    
+    background:url("img/bplogo.png");
+    background-size:cover;
+    background-repeat: none;
+    width: 100px;
+    height: 20px;
 }
+
+.top > .header > ul{
+    gap: 100px;
+    display: flex;
+    list-style: none;
+    padding-right: 120px;
+}
+
 .top > .profile{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 0px 5px 0px 50px;
+    width: 100%;
+}
+
+.top > .profile > .content{
+    max-width: 50%;
+}
+
+
+.top > .profile > .content > p{
+    margin:5px 0px;
+    padding:5px 0px; 
+}
+
+
+.top > .profile > .content > button{
+    width: 20%;
+    height: 30px;
+    background-color: black;
+    color: pink;
 }
 
 .top > .profile > .img{
     background:url("img/BP-1.jpg");
     background-size:cover;
-    width:50%;
-    height:200px;
+    height:300px;
     background-repeat: none;
     border-radius: 10px;
     margin: 30px 40px 40px 40px;
     padding:16;
+    width:80%;
 }
 
-ul{
-    display: flex;
-    list-style: none;
-    gap:100px;
+
+li{
+    margin: 10px;
 
 }
 
 li > h3{
     font-size: 16px;
     
-}
-
-
+}  
 
 .container{
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    background-color:black;
+    color:whitesmoke;
 }
 
-/* .container > .cards{
+.container > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    
+}
+.container > .cards{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .container > .cards > .card{
-    width: 20%;
-    height: 80%;
-} */
+    background-image: url(img/Blackpink02.jpeg);
+    background-size:cover;
+    height:250px;
+    background-repeat: none;
+    border-radius: 10px;
+    width:15%;
+    
+}
 
 .middle{
     display: flex;
@@ -80,15 +124,47 @@ li > h3{
     align-items: center;
 }
 
-/* .middle > .text{
+.middle > .quotes{
+    font-size: 50px;
+    padding: 80px 120px ;
+    color: black;
+    background-color:#e5446f;
+}
+
+.middle > .quotes > .author{
+    display: flex;
     justify-content: end;
-} */
+}
+
+.middle > .text{
+    justify-content: end;
+}
 
 .bottom{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.bottom > .banner{
+    display: flex;
+    width: 80%;
+    background-color: #e5446f;
+    margin: 10%;
+    border-radius: 10px;
+}
+.bottom > .banner > .text{
+    margin:30px;
+}
+.bottom > .banner> button{
+    margin:auto;
+    background-color: black;
+    color:whitesmoke
+}
 .footer{
     display: flex;
+    justify-content: center;
+    background-color: black;
+    color:whitesmoke;
 }
 
